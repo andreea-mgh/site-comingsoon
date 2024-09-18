@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+:root {
+    --background-color: #000510;
+    --background-color-2: #001a2d;
+    --text-color: #d5ffb2;
+    --accent-color: #00ff9d;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", "Arial", sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/carl-raw-8Gdayy2Lhi0-unsplash.jpg");
+    background-size: auto 100%;
+  }
+  
+  .container {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff08;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .arcade-title {
+    font-family: "Bungee", "Arial", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px #00000080;
+    animation: popUp 2s ease-in-out infinite alternate;
+  }
+  
+  .opening-soon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .countdown-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .countdown-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color-2);
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow:#ff00ff80 0px 0px 15px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .countdown-box span {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 1em;
+  }
+  
+  .tagline {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #00000080;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
